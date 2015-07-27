@@ -13,7 +13,7 @@ body {
   display: inline-block;
   width: 280px;
   height: 310px;
-  background-size: 640px 360px;
+  background-size: cover;
   /*background size contain or cover works great*/
   background-repeat: no-repeat;
   border: 1px solid #222;

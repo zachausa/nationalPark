@@ -22,8 +22,8 @@ function fetchData() {
 // when card click occurs
 function bindEventListeners() {
 $('.card').click(function(e){
-	var targetId= e.target.id;
-	var info = moviesDictionary[targetId];
+	var targetWiki= e.target.wiki;
+	var info = parkDictionary[targetWiki];
 	// info.cast = info.cast.join(', ');
 	// console.log(info);
 	var rawTemplate = $('#lightbox-template').html();
@@ -44,7 +44,7 @@ $('.card').click(function(e){
 function buildDictionary(parks) {
   for (var i = 0; i < parks.length; i++) {
     var currentPark = parks[i];
-    parkDictionary[currentPark.id] = currentPark;
+    parkDictionary[currentPark.targetWiki] = currentPark;
   };
   
 }
