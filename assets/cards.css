@@ -1,11 +1,54 @@
 body {
-  background-color: black;
+  background-color: #5E7630;
+
+}
+
+
+#main-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*height: 47px;*/
+ /* background-image: -webkit-linear-gradient(top, #517fa4, #306088);*/
+ background-color: #fff;
+  box-shadow: 2px 3px 10px rgba(50, 50, 50, 0.75);
+  z-index: 900;
+  color: #5a7d3d;
+}
+
+#a {
+  color: #5a7d3d;
+}
+
+.navbar-inverse {
+  color: #5a7d3d;
+  background-color: #5a7d3d;
+}
+
+.nav-header {
+  color: #5a7d3d;
+  color: #5a7d3d;
 }
 
 #cards-container {
   text-align: center;
-  max-width: 1080px;
+ /* max-width: 1080px;*/
+ max-width: 100%
   margin: 0 auto;
+  background-color: #5E7630;
+  margin-top: 52px;
+}
+
+.navlogo {
+  width: 130px;
+  height: 50px;
+  margin-top: -15px;
+  margin-left: -15px;
+  color: #5a7d3d;
+}
+
+.nav-color {
+ color: #5a7d3d;
 }
 
 .card {
@@ -16,7 +59,8 @@ body {
   background-size: cover;
   /*background size contain or cover works great*/
   background-repeat: no-repeat;
-  border: 1px solid #222;
+  /*border: 1px solid #222;*/
+  border: 1px solid #a1db71;
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
@@ -25,7 +69,7 @@ body {
 .lightbox {
   position: fixed;
   left: 50%;
-  top: 50px;
+  top: 75px;
   width: 75%;
   height: 520px;
   margin: 0 0 0 -37.5%;
