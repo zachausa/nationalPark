@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+
+  
+  <div id="cards-container"> 
+</div>
+  <div id="mask"></div>
+  <div id="lightbox-container"></div>
+  
+  
+  <!-- Thumbnail template. -->
+  <script id="thumbnail-template" type="x-tmpl-mustache">
+    <div id="{{ id }}" class="card" style="background-image: url({{ image }})"></div>
+  </script>  
+
+  <!-- Lightbox template. -->
+  <script id="lightbox-template" type="x-tmpl-mustache">
+    <div class="lightbox">
+      <div class="poster" style="background-image: url({{ image }})"></div>
+      <div class="cast">{{ cast }}</div>
+      <div class="teaser">{{ teaser }}</div>
+    </div>
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="cards.js"></script>
+  
+</body>
+</html>
