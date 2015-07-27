@@ -4,13 +4,15 @@ function fetchData() {
 
 	var rawTemplate = $('#thumbnail-template').html();
 
-  $.get('https://nationalpark.firebaseio.com/parks.json', function(parks) {
+  $.get('https://nationalpark.firebaseio.com/parks/parks.json', function(parks) {
    parkDictionary = parks;
+   // console.log(parks)
 
     for (var i = 0; i < parks.length; i++) {
     	var currentPark = parks[i];
     	var stampedTemplate = Mustache.render(rawTemplate, currentPark);
     	$('#cards-container').append(stampedTemplate);
+    	// console.log(stampedTemplate);
     };
 
     buildDictionary(parks);
@@ -22,15 +24,20 @@ function fetchData() {
 // when card click occurs
 function bindEventListeners() {
 $('.card').click(function(e){
-	var targetWiki= e.target.wiki;
-	var info = parkDictionary[targetWiki];
-	// info.cast = info.cast.join(', ');
+	var targetId= e.target.id;
+
+	// console.log(targetWiki);
+
+	var info = parkDictionary[targetId];
+
 	// console.log(info);
+
 	var rawTemplate = $('#lightbox-template').html();
 	// console.log(rawTemplate);
 	var stampedTemplate = Mustache.render(rawTemplate, info);	
 	
 	$('#lightbox-container').html(stampedTemplate);
+	console.log(stampedTemplate);
 	$('#lightbox-container').fadeIn();
 	$('#mask').fadeIn();
 });
@@ -44,7 +51,9 @@ $('.card').click(function(e){
 function buildDictionary(parks) {
   for (var i = 0; i < parks.length; i++) {
     var currentPark = parks[i];
-    parkDictionary[currentPark.targetWiki] = currentPark;
+    console.log(currentPark);
+    parkDictionary[currentPark.id] = currentPark;
+    // console.log(currentPark);
   };
   
 }

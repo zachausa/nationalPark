@@ -15,15 +15,15 @@
   
   <!-- Thumbnail template. -->
   <script id="thumbnail-template" type="x-tmpl-mustache">
-    <div id="{{ wiki }}" class="card" style="background-image: url({{ image }})"></div>
+    <div id="{{ id }}" class="card" style="background-image: url({{ image }})">   </div>
   </script>  
 
   <!-- Lightbox template. -->
   <script id="lightbox-template" type="x-tmpl-mustache">
     <div class="lightbox">
       <div class="poster" style="background-image: url({{ image }})"></div>
-      <div class="cast">{{ cast }}</div>
-      <div class="teaser">{{ teaser }}</div>
+      <div class="name">{{ name }}</div>
+      <div class="facts">{{ facts }}</div>
     </div>
   </script>
 
