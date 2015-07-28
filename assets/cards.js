@@ -4,7 +4,7 @@ function fetchData() {
 
 	var rawTemplate = $('#thumbnail-template').html();
 
-  $.get('https://nationalpark.firebaseio.com/parks/parks.json', function(parks) {
+  $.get('https://nationalpark.firebaseio.com/parks.json', function(parks) {
    parkDictionary = parks;
    // console.log(parks)
 
