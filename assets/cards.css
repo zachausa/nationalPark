@@ -103,6 +103,42 @@ body {
   white-space: nowrap;
 }
 
+
+.state {
+   position: absolute;
+  left: 72%;
+  top: 375px;
+  width: 90%;
+  overflow: hidden;
+  font-weight: bold;
+  color: #aaa;
+  text-align: left;
+  white-space: nowrap;
+}
+.created {
+  position: absolute;
+  left: 72%;
+  top: 375px;
+  width: 90%;
+  overflow: hidden;
+  font-weight: bold;
+  color: #aaa;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.gps {
+  position: absolute;
+  left: 72%;
+  top: 375px;
+  width: 90%;
+  overflow: hidden;
+  font-weight: bold;
+  color: #aaa;
+  text-align: left;
+  white-space: nowrap;
+}
+
 .facts {
   position: absolute;
   left: 15px;
