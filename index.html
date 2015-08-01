@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 
+  
+
 <!-- insert favicon -->
     <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
 
@@ -56,6 +58,8 @@
 </div>
   <div id="mask"></div>
   <div id="lightbox-container"></div>
+
+
   
   
   <!-- Thumbnail template. -->
@@ -70,15 +74,17 @@
 
       <div class="id" style="position: absolute"><a href="http://www.wikipedia.com/wiki/{{ id }}"><img src="assets/wiki.png" style="height: 40px; width: 40px; margin-left: 0em" /></a></div> 
 
-      <div class="name" class="state">{{ name }},  {{state}}</div>
+      <div class="name" class="state"><a href="https://www.youtube.com/watch?v={{ youtube }}">{{ name }}, {{state}}</a></div>
       // <div class="state">{{ state }}</div>
       <div class="created">Established in {{ created }}</div>
       <div class="acres">{{ acres }}</div>
-      <div class="gps">Coordinates: {{ gps }}</div>
+      <div class="gps"><a href="http://www.google.com/maps/?q={{ gps }}">Coordinates: {{ gps }}</a></div>
       <div class="facts">{{ facts }}</div>
     </div>
   </script>
 
+<!-- http://maps.google.com/maps?z=12&t=m&q=loc: -->
+<!-- http://www.google.com/maps/?q= -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
