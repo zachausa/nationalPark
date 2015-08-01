@@ -1,0 +1,184 @@
+body {
+  background-color: #5E7630;
+
+}
+
+#searchbox {
+
+}
+
+#main-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*height: 47px;*/
+ /* background-image: -webkit-linear-gradient(top, #517fa4, #306088);*/
+ background-color: #fff;
+  box-shadow: 2px 3px 10px rgba(50, 50, 50, 0.75);
+  z-index: 900;
+  color: #5a7d3d;
+}
+
+#a {
+  color: #5a7d3d;
+}
+
+.navbar-inverse {
+  color: #5a7d3d;
+  background-color: #5a7d3d;
+}
+
+.nav-header {
+  color: #5a7d3d;
+  color: #5a7d3d;
+}
+
+#cards-container {
+  text-align: center;
+ /* max-width: 1080px;*/
+ max-width: 100%
+  margin: 0 auto;
+  background-color: #5E7630;
+  margin-top: 52px;
+}
+
+.navlogo {
+  width: 130px;
+  height: 50px;
+  margin-top: -15px;
+  margin-left: -15px;
+  color: #5a7d3d;
+}
+
+.nav-color {
+ color: #5a7d3d;
+}
+
+
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 310px;
+  background-size: cover;
+  /*background size contain or cover works great*/
+  background-repeat: no-repeat;
+  /*border: 1px solid #222;*/
+  border: 1px solid #a1db71;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  left: 50%;
+  top: 75px;
+  width: 75%;
+  height: 535px;
+  margin: 0 0 0 -37.5%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.poster {
+ width: 100%;
+ height: 350px;
+ border-radius: 20px 20px 0 0;
+ background-size: cover;
+ position: absolute;
+ background-repeat: no-repeat;
+ top: 0;
+}
+
+.name {
+  position: absolute;
+  left: 15px;
+  top: 351px;
+  width: 90%;
+  overflow: hidden;
+  font-weight: bold;
+  color: #aaa;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.wiki {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  text-align: left;
+
+
+}
+
+/*.state {
+   position: absolute;
+  left: 72%;
+  top: 375px;
+  width: 90%;
+  overflow: hidden;
+  font-weight: bold;
+  color: #aaa;
+  text-align: left;
+  white-space: nowrap;
+}*/
+.created {
+  position: absolute;
+  left: 3%;
+  top: 370px;
+  width: 90%;
+  overflow: hidden;
+  font-weight: bold;
+  color: #aaa;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.gps {
+  position: absolute;
+  left: 3%;
+  top: 387px;
+  width: 90%;
+  overflow: hidden;
+  font-weight: bold;
+  color: #aaa;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.facts {
+  position: absolute;
+  left: 15px;
+  top: 405px;
+  width: 90%;
+  height: 130px;
+  overflow-y: scroll;
+  color: black;
+  text-align: left;
+}
+
+#mask {
+  position: fixed;
+  display: none;
+  opacity: .8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+#mask-container {
+  display: none;
+}
+
+#lightbox-container {
+  display: none;
+}
