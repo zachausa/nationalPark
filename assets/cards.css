@@ -1,5 +1,5 @@
 body {
-  background-color: #5E7630;
+  background-color: #354020;
 
 }
 
@@ -35,7 +35,7 @@ body {
  /* max-width: 1080px;*/
  max-width: 100%
   margin: 0 auto;
-  background-color: #5E7630;
+  background-color: #354020;
   margin-top: 52px;
 }
 
@@ -60,7 +60,7 @@ body {
   /*background size contain or cover works great*/
   background-repeat: no-repeat;
   /*border: 1px solid #222;*/
-  border: 1px solid #a1db71;
+  border: 1px solid #354020;
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
