@@ -39,6 +39,10 @@ body {
   margin-top: 52px;
 }
 
+.namestate{
+  color: white;
+}
+
 .navlogo {
   width: 130px;
   height: 50px;
@@ -49,6 +53,36 @@ body {
 
 .nav-color {
  color: #5a7d3d;
+}
+
+.maintitle{
+/*  font-size:13px;
+color:#fff;
+  text-shadow: .5px .5px 0 #fff,
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+0px 1px 0 #000,
+1px 0px 0 #000,
+0px -1px 0 #000,
+-1px 0px 0 #000,
+4px 4px 3px #000;*/
+  /* WebKit (Safari/Chrome) Only */
+  -webkit-text-stroke: 1px black;
+  
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+  
+  color: white;
+  
+  text-shadow:
+    3px 3px 0 #000,
+  
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
 }
 
 .card {
@@ -64,6 +98,11 @@ body {
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
+  color: white;
+  /*outline-style: solid;  
+  outline-color: black;*/
+  font-weight: lighter;
+
 }
 
 .lightbox {

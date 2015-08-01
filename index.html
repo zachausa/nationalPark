@@ -64,7 +64,9 @@
   
   <!-- Thumbnail template. -->
   <script id="thumbnail-template" type="x-tmpl-mustache">
-    <div id="{{ id }}" class="card" style="background-image: url({{ image }})">   </div>
+
+    <div id="{{ id }}" class="card" style="background-image: url({{ image }})"><div class="maintitle"> {{ name }}, {{state}} </div> </div>
+
   </script>  
 
   <!-- Lightbox template. -->
