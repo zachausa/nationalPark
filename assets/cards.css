@@ -68,13 +68,13 @@ color:#fff;
 -1px 0px 0 #000,
 4px 4px 3px #000;*/
   /* WebKit (Safari/Chrome) Only */
-  -webkit-text-stroke: 1.5px black;
+  -webkit-text-stroke: .1px white;
   
   /* If we weren't using text-shadow, we'd set a fallback color
      and use this to set color instead
     -webkit-text-fill-color: white; */
   
-  color: white;
+  color: black;
   
   text-shadow:
     0px 0px 0 #fff,
