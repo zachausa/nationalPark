@@ -37,7 +37,7 @@ body {
 #cards-container {
   text-align: center;
  /* max-width: 1080px;*/
- max-width: 100%
+ max-width: 100%;
   margin: 0 auto;
   background-color: #0F1602;
   margin-top: 52px;
@@ -91,7 +91,7 @@ color:#fff;
     font-weight: 100;
     font-size: 12px;
 
-background-color: rgba(54, 25, 25, .5);
+background-color: rgba(54, 25, 25, .8);
 
 }
 
