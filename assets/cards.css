@@ -152,13 +152,18 @@ background-color: darkolivegreen;
   white-space: nowrap;
 }
 
+.youtube {
+  position: absolute;
+   text-align: left;
+  white-space: nowrap;
+}
 .wiki {
   position: absolute;
   height: 35px;
   width: 35px;
   overflow: hidden;
   text-align: left;
-
+overflow: hidden;
 
 }
 
