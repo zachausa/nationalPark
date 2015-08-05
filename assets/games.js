@@ -2,6 +2,13 @@ var parkDictionary = {};
 
 function fetchData() {
 
+  // empty the cards container
+
+$('#cards-container').html('');
+
+var query = $('#searchbox').val();
+console.log(query);
+
 	var rawTemplate = $('#thumbnail-template').html();
 
   $.get('https://nationalpark.firebaseio.com/parks.json', function(parks) {
@@ -10,9 +17,13 @@ function fetchData() {
 
     for (var i = 0; i < parks.length; i++) {
     	var currentPark = parks[i];
+      var title = currentPark.name
+
+       if(title.includes(query) == true ) {
     	var stampedTemplate = Mustache.render(rawTemplate, currentPark);
     	$('#cards-container').append(stampedTemplate);
     	// console.log(stampedTemplate);
+    }
     };
 
     buildDictionary(parks);
@@ -58,4 +69,15 @@ function buildDictionary(parks) {
   
 }
 
-fetchData();
+// fetchData();
+function init() {
+$('#searchbox').keypress(function(e){
+  //the hit enter.
+if (e.keyCode == 13 ){
+  fetchData();
+}
+
+});
+}
+
+init();
