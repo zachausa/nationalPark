@@ -1,12 +1,13 @@
 body {
-  background-color: #5E7630;
+  background-color: #354020;
 
 }
 
 #searchbox {
 position: absolute;
-margin-top: -32px;
+margin-top: 10px;
 }
+
 
 #main-navbar {
   position: fixed;
@@ -24,6 +25,10 @@ margin-top: -32px;
   color: #5a7d3d;
 }
 
+.narbar-brand {
+  font-variant: small-caps;
+}
+
 .navbar-inverse {
   color: #5a7d3d;
   background-color: #5a7d3d;
@@ -37,11 +42,14 @@ margin-top: -32px;
 #cards-container {
   text-align: center;
  /* max-width: 1080px;*/
- max-width: 100%
+ max-width: 100%;
   margin: 0 auto;
-  background-color: #5E7630;
-  margin-top: 92px;
+  background-color: #0F1602;
+  margin-top: 52px;
+}
 
+.namestate{
+  color: white;
 }
 
 .navlogo {
@@ -56,7 +64,41 @@ margin-top: -32px;
  color: #5a7d3d;
 }
 
+.maintitle{
+/*  font-size:13px;
+color:#fff;
+  text-shadow: .5px .5px 0 #fff,
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+0px 1px 0 #000,
+1px 0px 0 #000,
+0px -1px 0 #000,
+-1px 0px 0 #000,
+4px 4px 3px #000;*/
+  /* WebKit (Safari/Chrome) Only */
+/*  -webkit-text-stroke: .1px white;*/
+  
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+  
+/*  color: black;*/
+  
 
+  /*text-shadow:
+    0px 0px 0 #fff,
+  
+   -.1px -.1px 0 #000,  
+    .1px -.1px 0 #000,
+   -.1px  .1px 0 #000,
+    .1px  1px 0 #000;*/
+    font-weight: 100;
+    font-size: 12px;
+background-color: darkolivegreen;
+/*background-color: rgba(54, 25, 25, .8);*/
+
+}
 
 .card {
   position: relative;
@@ -67,10 +109,15 @@ margin-top: -32px;
   /*background size contain or cover works great*/
   background-repeat: no-repeat;
   /*border: 1px solid #222;*/
-  border: 1px solid #a1db71;
+  border: 1px solid #354020;
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
+  color: white;
+  /*outline-style: solid;  
+  outline-color: black;*/
+  font-weight: lighter;
+
 }
 
 .lightbox {
@@ -110,13 +157,18 @@ margin-top: -32px;
   white-space: nowrap;
 }
 
+.youtube {
+  position: absolute;
+   text-align: left;
+  white-space: nowrap;
+}
 .wiki {
   position: absolute;
   height: 35px;
   width: 35px;
   overflow: hidden;
   text-align: left;
-
+overflow: hidden;
 
 }
 

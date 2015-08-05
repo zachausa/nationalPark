@@ -3,6 +3,11 @@ body {
 
 }
 
+#searchbox {
+position: absolute;
+margin-top: -32px;
+}
+
 
 #main-navbar {
   position: fixed;
