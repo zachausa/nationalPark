@@ -152,9 +152,10 @@ background-color: darkolivegreen;
   width: 90%;
   overflow: hidden;
   font-weight: bold;
-  color: #aaa;
+  color: black;
   text-align: left;
   white-space: nowrap;
+  text-decoration: underline;
 }
 
 .youtube {
@@ -202,7 +203,7 @@ overflow: hidden;
   width: 90%;
   overflow: hidden;
   font-weight: bold;
-  color: #aaa;
+  color: black;
   text-align: left;
   white-space: nowrap;
 }
