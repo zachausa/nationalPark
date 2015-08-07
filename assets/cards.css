@@ -39,6 +39,15 @@ margin-top: -32px;
   color: #5a7d3d;
 }
 
+.cardnav {
+display: -webkit-inline-box;
+position: absolute;
+background-color: darkolivegreen;
+color: black;
+width: 100%;
+border-radius: 10px;
+}
+
 #cards-container {
   text-align: center;
  /* max-width: 1080px;*/
@@ -162,6 +171,10 @@ background-color: darkolivegreen;
   position: absolute;
    text-align: left;
   white-space: nowrap;
+}
+
+.youtubePic1{
+  position:  absolute;
 }
 
 .youtubePic {
