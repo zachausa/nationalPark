@@ -72,18 +72,18 @@
     <div id="{{ id }}" class="card" style="background-image: url({{ image }})"><div class="maintitle"> {{ name }}, {{state}} </div> </div>
 
   </script>  
-  
+
 <!-- Lightbox template. -->
    <script id="lightbox-template" type="x-tmpl-mustache">
     <div class="lightbox">
       <div class="poster" style="background-image: url({{ image }})"></div>
 
       <div class="cardnav">
-       <li class="active"><a href="http://www.wikipedia.com/wiki/{{ id }}" target="_blank" style = "color: white;"><img src="assets/wiki.png" style="width: 22px;">Wikipedia</a></li> 
+       <li class="active" style="margin-right: 5%"><a href="http://www.wikipedia.com/wiki/{{ id }}" target="_blank" style = "color: white;"><img src="assets/wiki.png" style="width: 22px;">Wikipedia</a></li> 
 
-       <li class="active"><a href="https://www.youtube.com/watch?v={{ youtube }}" target="_blank" style = "color: white"><img src="assets/youtube.png" style="width: 22px;">Youtube</a></li> 
+       <li class="active" style="margin-right: 5%"><a href="https://www.youtube.com/watch?v={{ youtube }}" target="_blank" style = "color: white"><img src="assets/youtube.png" style="width: 22px;">Youtube</a></li> 
 
-       <li class="active"><a href="http://www.google.com/maps/?q={{ gps }}" target="_blank" style = "color: white"><img src="assets/googleMaps.png" style="width: 22px;">Maps</a></li>
+       <li class="active" style="margin-right: 5%"><a href="http://www.google.com/maps/?q={{ gps }}" target="_blank" style = "color: white"><img src="assets/googleMaps.png" style="width: 22px;">Maps</a></li>
       </div>
 
       <div class="name" class="state">{{ name }}, {{state}}</div>
