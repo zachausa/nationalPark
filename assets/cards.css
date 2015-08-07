@@ -264,3 +264,16 @@ overflow: hidden;
 #lightbox-container {
   display: none;
 }
+
+
+/* mouse over link */
+li:hover {
+    color: red;
+    background-color: #505050;
+
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
