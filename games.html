@@ -71,13 +71,17 @@
     <div class="lightbox">
       <div class="poster" style="background-image: url({{ image }})"></div>
 
-      <div class="cardnav">
-       <li class="active" style="margin-right: 5%"><a href="http://www.wikipedia.com/wiki/{{ id }}" target="_blank" style = "color: white;"><img src="assets/wiki.png" style="width: 22px;">Wikipedia</a></li> 
 
-       <li class="active" style="margin-right: 5%"><a href="https://www.youtube.com/watch?v={{ youtube }}" target="_blank" style = "color: white"><img src="assets/youtube.png" style="width: 22px;">Youtube</a></li> 
+<div class="eqi-container">
 
-       <li class="active" style="margin-right: 5%"><a href="http://www.google.com/maps/?q={{ gps }}" target="_blank" style = "color: white"><img src="assets/googleMaps.png" style="width: 22px;">Maps</a></li>
-      </div>
+  <div><a href="http://www.wikipedia.com/wiki/{{ id }}" target="_blank" style = "color: white;"><img src="assets/wiki.png" style="width: 22px;">Wikipedia</a></div>
+
+  <div><a href="https://www.youtube.com/watch?v={{ youtube }}" target="_blank" style = "color: white"><img src="assets/youtube.png" style="width: 22px;">Youtube</a></div>
+
+  <div><a href="http://www.google.com/maps/?q={{ gps }}" target="_blank" style = "color: white"><img src="assets/googleMaps.png" style="width: 22px;">Maps</a></div>
+  <div></div>
+</div>
+     
 
       <div class="name" class="state">{{ name }}, {{state}}</div>
       
