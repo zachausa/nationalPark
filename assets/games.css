@@ -5,11 +5,12 @@ body {
 
 .eqi-container {
   /*border: 10px solid black;*/
-  display: inline-table;
+  display: flex;
   justify-content: space-between;
   position: relative;
-  margin-left: -65px;
+  margin-top: -37px;
 }
+
 .eqi-container div {
   width: 50px;
   height: 50px;
@@ -150,7 +151,7 @@ background-color: darkolivegreen;
 .lightbox {
   position: fixed;
   left: 50%;
-  top: 75px;
+  top: 88px;
   width: 75%;
   height: 515px;
   margin: 0 0 0 -37.5%;
