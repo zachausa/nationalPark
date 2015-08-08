@@ -24,8 +24,9 @@ console.log(query);
     	$('#cards-container').append(stampedTemplate);
     	// console.log(stampedTemplate)
        } else {
-        alert("Try again!")
-       }
+        return alert("Try capitalizing the first letter!");
+      };
+       
     };
 
     buildDictionary(parks);
