@@ -23,8 +23,9 @@ console.log(query);
     	var stampedTemplate = Mustache.render(rawTemplate, currentPark);
     	$('#cards-container').append(stampedTemplate);
     	// console.log(stampedTemplate)
-      
-    }
+       } else {
+        alert("Try again!")
+       }
     };
 
     buildDictionary(parks);
