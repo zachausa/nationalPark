@@ -22,7 +22,8 @@ console.log(query);
        if(title.includes(query) == true ) {
     	var stampedTemplate = Mustache.render(rawTemplate, currentPark);
     	$('#cards-container').append(stampedTemplate);
-    	// console.log(stampedTemplate);
+    	// console.log(stampedTemplate)
+      
     }
     };
 

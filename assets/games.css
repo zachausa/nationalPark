@@ -5,9 +5,13 @@ body {
 
 #searchbox {
 position: absolute;
-margin-top: 10px;
+margin-top: -32px;
 }
 
+#searchbox {
+position: absolute;
+margin-top: 10px;
+}
 
 #main-navbar {
   position: fixed;
@@ -37,6 +41,15 @@ margin-top: 10px;
 .nav-header {
   color: #5a7d3d;
   color: #5a7d3d;
+}
+
+.cardnav {
+display: -webkit-inline-box;
+position: absolute;
+background-color: darkolivegreen;
+color: black;
+width: 100%;
+border-radius: 10px;
 }
 
 #cards-container {
@@ -125,7 +138,7 @@ background-color: darkolivegreen;
   left: 50%;
   top: 75px;
   width: 75%;
-  height: 535px;
+  height: 515px;
   margin: 0 0 0 -37.5%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -137,7 +150,7 @@ background-color: darkolivegreen;
 
 .poster {
  width: 100%;
- height: 350px;
+ height: 23em;
  border-radius: 20px 20px 0 0;
  background-size: cover;
  position: absolute;
@@ -148,19 +161,34 @@ background-color: darkolivegreen;
 .name {
   position: absolute;
   left: 15px;
-  top: 351px;
+  top: 325px;
   width: 90%;
   overflow: hidden;
   font-weight: bold;
-  color: #aaa;
+  color: black;
   text-align: left;
   white-space: nowrap;
+  text-decoration: underline;
 }
 
 .youtube {
   position: absolute;
    text-align: left;
   white-space: nowrap;
+}
+
+.youtubePic1{
+  position:  absolute;
+}
+
+.youtubePic {
+  position: absolute;
+  height: 40px; 
+  width: 40px; 
+  margin-top: 125px; 
+  border: 2px dotted black;
+ border-radius: 20px;
+ margin-left: -8px;
 }
 .wiki {
   position: absolute;
@@ -185,8 +213,8 @@ overflow: hidden;
 }*/
 .created {
   position: absolute;
-  left: 3%;
-  top: 370px;
+  left: 15px;
+  top: 340px;
   width: 90%;
   overflow: hidden;
   font-weight: bold;
@@ -197,12 +225,12 @@ overflow: hidden;
 
 .gps {
   position: absolute;
-  left: 3%;
-  top: 387px;
+  left: 15px;
+  top: 357px;
   width: 90%;
   overflow: hidden;
   font-weight: bold;
-  color: #aaa;
+  color: black;
   text-align: left;
   white-space: nowrap;
 }
@@ -210,12 +238,16 @@ overflow: hidden;
 .facts {
   position: absolute;
   left: 15px;
-  top: 405px;
+  top: 377px;
   width: 90%;
   height: 130px;
   overflow-y: scroll;
   color: black;
   text-align: left;
+}
+
+.wikiPic {
+
 }
 
 #mask {
@@ -235,4 +267,17 @@ overflow: hidden;
 
 #lightbox-container {
   display: none;
+}
+
+
+/* mouse over link */
+li:hover {
+    color: red;
+    background-color: #505050;
+
+}
+
+/* selected link */
+a:active {
+    color: yellow;
 }
